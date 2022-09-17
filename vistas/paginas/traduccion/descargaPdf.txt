@@ -1,0 +1,20 @@
+    $pdf->Cell(180,5,utf8_decode('HABITACIÓN: '.$hab),0,1,'R');
+    $pdf->Cell(0,10,utf8_decode('SERVICIO AL HUÉSPED:'),0,1,'C');
+    $pdf->Cell(0,10,utf8_decode('¡MÁS RÁPIDO QUE UNA'),0,1,'C');
+    $pdf->Cell(0,10,utf8_decode('LLAMADA TELEFÓNICA!'),0,1,'C');
+    $pdf->Cell(90,15,utf8_decode('1. Escanea'),0,0,'R');
+    $pdf->Cell(110,15,utf8_decode('el código QR'),0,1,'L');
+    $pdf->Cell(125,15,utf8_decode('2. Selecciona'),0,0,'R');
+    $pdf->Cell(80,15,utf8_decode(' qué'),0,1,'L');
+    $pdf->Cell(0,15,utf8_decode('necesitas (si no está en la lista'),0,1,'C');
+    $pdf->Cell(0,15,utf8_decode('puedes escribirlo).'),0,1,'C');
+    $pdf->Cell(0,15,utf8_decode('¡LISTO!'),0,1,'C');
+    $pdf->Cell(0,15,utf8_decode('ES UN PLACER ATENDERTE'),0,1,'C');
+    $pdf->Cell(138,15,utf8_decode('Seguimiento en línea,'),0,0,'R');
+    $pdf->Cell(62,15,utf8_decode('conoce'),0,1,'L');
+    $pdf->Cell(0,15,utf8_decode('quién te apoyará y el tiempo'),0,1,'C');
+    $pdf->Cell(85,15,utf8_decode('de atención.'),0,0,'R');
+    $pdf->Cell(115,15,utf8_decode('Califica el servicio'),0,1,'L');
+    $pdf->Cell(0,15,utf8_decode('y ayúdanos a que tu estancia'),0,1,'C');
+    $pdf->Cell(0,15,utf8_decode('sea la mejor experiencia.'),0,1,'C');
+

@@ -1,0 +1,4 @@
+
+    <thead class="btn-info"><tr><th>Habitación</th></tr></thead><tbody>'; 
+ 
+

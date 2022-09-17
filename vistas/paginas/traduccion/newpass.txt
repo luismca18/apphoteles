@@ -1,0 +1,3 @@
+<h1>Recuperación de contraseña de VixDrix Hospedaje</h1>
+<label for="email">Ingrese su correo electrónico:</label>
+alert("Por favor revisa tu correo electrónico para continuar con el proceso.");

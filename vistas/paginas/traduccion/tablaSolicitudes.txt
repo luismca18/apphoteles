@@ -1,0 +1,17 @@
+        <th>Habitación</th>
+        <th>Colaborador</th>
+        <th hidden>TimeStamp</th>
+        <th>Status</th>
+        <th>TimeLine</th>
+        <th>Cambios</th>
+       <div class="info-box-content"><span class="info-box-text">Tiempo Transcurrido</span>
+                        if ($horaAct>0){ echo $horaAct.' horas con '; }
+                        if ($minAct>0){ echo $minAct.' minutos'; }
+                         <div class="info-box-content"><span class="info-box-text">Tiempo Transcurrido</span>
+                      <div class="info-box-content"><span class="info-box-text">Solicitud atendia</span>';
+                    echo '<span class="badge badge-success">en Proceso</span></td><td>';
+                      <div class="info-box-content"><span class="info-box-text">Tiempo Transcurrido</span>
+                    if ($horaAct>0){ echo $horaAct.' horas con '; }
+                    if ($minAct>=0){ echo $minAct.' minutos'; }
+                    echo '<span class="badge badge-danger">Cancelada</span></td><td>';
+                      <div class="info-box-content"><span class="info-box-text">Solicitud Cancelada</span>';

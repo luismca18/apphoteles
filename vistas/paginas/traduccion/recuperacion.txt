@@ -1,0 +1,9 @@
+<h1>Recuperación de contraseña de VixDrix Hospedaje</h1>
+<label for="pwd"  class="formulario__label">Contraseña nueva:</label>
+<input type="password" class="form-control" name="newPass"  id="pwd" maxlength="8" minlength="4" placeholder="Ingrese una contraseña con 4 dígitos.">
+<p class="formulario__input-error">Ingrese una contraseña con 4 dígitos.</p>
+<label for="pwd"  class="formulario__label">Repetir Contraseña:</label>
+<input type="password" class="form-control" name="registroPassword2"  id="pwd2" maxlength="8" minlength="4"  placeholder="Repita la contraseña anterior.">
+<p class="formulario__input-error">Ambas contraseñas deben de ser iguales.</p>
+alert("Su contraseña se actualizó correctamente.");
+<button type="submit" class="btn btn-primary">Guardar</button>

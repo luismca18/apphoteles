@@ -1,0 +1,5 @@
+
+                            echo '<tr role="row"><th >STATUS</th><th >Resolutor</th><th >HABITACION</th><th>HUESPED</th><th >FECHA</th><th >SOLICITUD</th><th >VALORACION</th><th>COMENTARIOS</th><th>TAREA</th></tr>';
+                            echo '<tr role="row"><th >Nombre de la Tarea</th><th >Total de solicitudes</th></tr>';
+                            echo '<tr role="row"><th >Número de Habitación</th><th >Total de solicitudes</th></tr>';
+                            echo '<tr role="row"><th >Nombre de la Tarea</th><th >Total de solicitudes</th></tr>';

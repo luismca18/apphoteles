@@ -1,0 +1,114 @@
+<?php
+class ViewController 
+{
+	private static $view_path='vistas/';
+	private static $huesped_path='huesped/';
+
+	public function load_view($view)
+	{
+		if($view=='ingreso'){
+			require_once(self::$view_path.'plantilla.php');
+			require_once(self::$view_path.'paginas/ingreso.php');
+		}elseif($view=='newpass'){
+			require_once(self::$view_path.'plantilla.php');
+			require_once(self::$view_path.'paginas/newpass.php');
+		}elseif($view=='recuperacion'){
+			require_once(self::$view_path.'plantilla.php');
+			require_once(self::$view_path.'paginas/recuperacion.php');						
+	    }elseif($view=='registro'){
+			require_once(self::$view_path.'plantilla.php');
+			require_once(self::$view_path.'paginas/registro.php');		
+		}elseif($view=='resolutor'){
+			require_once(self::$view_path.'plantillaadmin.php');
+			include(self::$view_path.'paginas/resolutor.php');
+			include(self::$view_path.'modulos/pie.php');
+		}elseif($view=='solicitudes'){
+			require_once(self::$view_path.'plantillaadmin.php');
+			include(self::$view_path.'paginas/solicitudes.php');
+			include(self::$view_path.'paginas/tablaSolicitudes.php');
+			include(self::$view_path.'modulos/pie.php');
+		}elseif($view=='tablasolicitudes'){
+			require_once(self::$view_path.'plantillaadmin.php');
+			include(self::$view_path.'paginas/solicitudes.php');
+			include(self::$view_path.'paginas/tablaSolicitudes.php');
+			include(self::$view_path.'modulos/pie.php');
+		}elseif($view=='inicio'){
+			require_once(self::$view_path.'plantillaadmin.php');
+			include(self::$view_path.'paginas/solicitudes.php');
+			include(self::$view_path.'modulos/pie.php');
+		}elseif($view=='tareas'){
+			require_once(self::$view_path.'plantillaadmin.php');
+			include(self::$view_path.'paginas/tareas.php');
+			include(self::$view_path.'modulos/pie.php');
+		}elseif($view=='soporte'){
+			require_once(self::$view_path.'plantillaadmin.php');
+			include(self::$view_path.'paginas/soporte.php');
+			include(self::$view_path.'modulos/pie.php');						
+		}elseif($view=='huesped'){
+			require_once(self::$huesped_path.'index.php');
+    	}elseif($view=='salir'){
+			//require_once(self::$view_path.'plantillaadmin.php');
+			include(self::$view_path.'paginas/salir.php');
+			//include(self::$view_path.'modulos/pie.php');			
+		}elseif($view=='dashboard'){
+			require_once(self::$view_path.'plantillaadmin.php');
+			include(self::$view_path.'paginas/dashboard.php');
+			include(self::$view_path.'modulos/pie.php');
+		}elseif($view=='eningreso'){
+			require_once(self::$view_path.'en.plantilla.php');
+			require_once(self::$view_path.'paginas/en.ingreso.php');
+		}elseif($view=='ennewpass'){
+			require_once(self::$view_path.'en.plantilla.php');
+			require_once(self::$view_path.'paginas/en.newpass.php');
+		}elseif($view=='enrecuperacion'){
+			require_once(self::$view_path.'en.plantilla.php');
+			require_once(self::$view_path.'paginas/en.recuperacion.php');						
+	    }elseif($view=='enregistro'){
+			require_once(self::$view_path.'en.plantilla.php');
+			require_once(self::$view_path.'paginas/en.registro.php');		
+		}elseif($view=='enresolutor'){
+			require_once(self::$view_path.'en.plantillaadmin.php');
+			include(self::$view_path.'paginas/en.resolutor.php');
+			include(self::$view_path.'modulos/en.pie.php');
+		}elseif($view=='ensolicitudes'){
+			require_once(self::$view_path.'en.plantillaadmin.php');
+			include(self::$view_path.'paginas/en.solicitudes.php');
+			include(self::$view_path.'paginas/en.tablaSolicitudes.php');
+			include(self::$view_path.'modulos/en.pie.php');
+		}elseif($view=='entablasolicitudes'){
+			require_once(self::$view_path.'en.plantillaadmin.php');
+			include(self::$view_path.'paginas/en.solicitudes.php');
+			include(self::$view_path.'paginas/en.tablaSolicitudes.php');
+			include(self::$view_path.'modulos/en.pie.php');
+		}elseif($view=='eninicio'){
+			require_once(self::$view_path.'en.plantillaadmin.php');
+			include(self::$view_path.'paginas/en.solicitudes.php');
+			include(self::$view_path.'modulos/en.pie.php');
+		}elseif($view=='entareas'){
+			require_once(self::$view_path.'en.plantillaadmin.php');
+			include(self::$view_path.'paginas/en.tareas.php');
+			include(self::$view_path.'modulos/en.pie.php');
+		}elseif($view=='ensoporte'){
+			require_once(self::$view_path.'en.plantillaadmin.php');
+			include(self::$view_path.'paginas/en.soporte.php');
+			include(self::$view_path.'modulos/en.pie.php');						
+		}elseif($view=='huesped'){
+			require_once(self::$huesped_path.'index.php');
+    	}elseif($view=='ensalir'){
+			//require_once(self::$view_path.'plantillaadmin.php');
+			include(self::$view_path.'paginas/en.salir.php');
+			//include(self::$view_path.'modulos/pie.php');			
+		}elseif($view=='endashboard'){
+			require_once(self::$view_path.'en.plantillaadmin.php');
+			include(self::$view_path.'paginas/en.dashboard.php');
+			include(self::$view_path.'modulos/en.pie.php');
+		}else{ 
+			require_once(self::$view_path.'plantilla.php');
+			require_once(self::$view_path.'paginas/error404.php');
+		}
+	}
+
+	public function __destruct() {
+		//unset ($this);
+	}
+}

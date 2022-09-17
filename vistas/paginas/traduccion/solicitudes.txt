@@ -1,0 +1,24 @@
+            <h1>Servicios solicitados por huésped</h1>
+            
+                <h3 class="card-title mr-3 mt-2">Total de Solicitudes</h3>
+                    <strong id="etiqueta" class="mr-auto">Sin Asignar</strong>
+                    <strong id="etiqueta" class="mr-auto">Atendidas</strong>
+                    <strong id="etiqueta" class="mr-auto">En Proceso</strong>
+                    <strong id="etiqueta" class="mr-auto">Canceladas</strong>
+                <span class="info-box-text">En Proceso</span>
+                <span class="info-box-text">Canceladas</span>
+                <span class="info-box-text"> Atendidas</span>
+                <h3 class="card-title mr-3 mt-2">Total de Solicitudes pendientes</h3>
+                <button type="button" class="btn btn-danger btn-lg mt-3" >Has agotado los tickets  mensuales gratuitos, actualiza tu plan para poder ver los tickets nuevos, click aquí
+          <h4 class="modal-title text center">Datos de la solicitud</h4>
+                <label>Folio:</label><br>
+                <label>Solicitud del Huésped:</label>
+                Comentario del Huésped:</label>
+                <label>Nota del Hotel:</label>
+                Calificación para el colaborador:</label>
+          <h4 class="modal-title text center">Seleccione el colaborador</h4>
+                Nombre del colaborador:</label>
+                <select class="form-control" id="SelectResolutor">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+               <button type="button" class="btn btn-info" data-dismiss="modal" onclick="ActualizaResolutor();">Asignar colaborador</button>
+            

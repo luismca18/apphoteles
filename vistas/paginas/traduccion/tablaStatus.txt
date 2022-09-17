@@ -1,0 +1,7 @@
+}
+            <span class="info-box-text">Sin Asignar</span>
+            <span class="info-box-text">En Proceso</span>
+            <span class="info-box-text">Canceladas</span>
+             <span class="info-box-text">Atendidas0</span>
+ 
+  ';

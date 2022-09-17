@@ -1,0 +1,4 @@
+	<h1>Ingrese a VixDrix Hospedaje</h1>
+			<label for="email">Correo electrónico:</label>
+			<label for="pwd">Contraseña:</label>
+		<div class="pt-4 pass"><a href="newpass"  >¿Olvidaste la contraseña?</a></div>

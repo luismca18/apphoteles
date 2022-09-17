@@ -1,0 +1,66 @@
+<h3>Datos del hotel</h3>
+<label for="nombre" class="formulario__label">Nombre del hotel:</label>
+<p class="formulario__input-error">El nombre tiene que ser de máximo 150 carácteres.</p>
+<label for="email"  class="formulario__label">Correo electrónico:</label>
+<input type="text" class="form-control transformacion2  formulario__input" name="registroEmail"  id="email" maxlength="150" onkeypress="return checkEmail(event)" placeholder="Indique un correo electrónico válido." <?php
+<p class="formulario__input-error">Debe ingresar un correo electrónico válido.</p>
+<label for="ubicacion"  class="formulario__label">Ubicación:</label>
+<option value="">Seleccione el estado</option>
+<p class="formulario__input-error">El nombre tiene que ser de máximo 150< carácteres.</p>
+</div>
+Editar datos
+<button class="btn btn-success" id="guardaDatos" onclick="verificaDatos(<?php echo $_SESSION['IdHotel'] ?>);">Guardar
+<button class="btn btn-danger" id="cancelaDatos"onclick="cancela();">   Cancelar
+Actualiza la contraseña
+Actualiza el logotipo
+<h3>Colaboradores</h3>   
+<button class="btn btn-warning btn-sm p-2" data-toggle="modal"data-target="#crearResolutor">Agregar nuevo colaborador</button>
+<th>Foto</th>
+<th>Nombre</th>
+<th>Puesto</th>
+<th>Acciones</th>
+<h3>Habitaciones</h3>   
+<button class="btn btn-primary btn-sm p-2"data-toggle="modal" data-target="#modificaHab" id="IdHab" onclick="modificaHabita('.$_SESSION['IdHotel'].',0,``)">Agregar nuevo Habitación
+  <th>Folio</th>
+  <th>Hab.</th>
+  <th>QR</th>
+  <th>Acciones</th>
+echo '<a href="'.$url_actual.'paginas/descargaPdf.php?idh='.base64_encode($_SESSION['IdHotel']).'&hab='.base64_encode($value['numhabitacionhuesped']).'&qrHab='.base64_encode($value['qrhabitaciones']).'"  target="_blank"  class="btn btn-primary btn-sm btn-block">Descargar QR</a>';
+  //echo '<a href="'.$rutaPDF.'" download="QR - Hab ('.$value["numhabitacionhuesped"].').pdf"  class="btn btn-primary btn-sm btn-block">Descargar QR</a>';
+/*
+echo '
+<button class="btn btn-primary btn-sm btn-block"onclick="descargaAPDF('.$_SESSION['IdHotel'].','.$value['numhabitacionhuesped'].',`'.$value['qrhabitaciones'].'`);"> Descargar QR
+
+  <h4 class="modal-title">Crear colaborador</h4>
+
+  <input maxlength="20" id="name" type="text" onKeyUp="this.value=this.value.toUpperCase();" class="form-control" name="name"  required autocomplete="name" autofocus placeholder="Nombre">
+
+  <input maxlength="20" id="apaterno" type="text" class="form-control"  onKeyUp="this.value=this.value.toUpperCase();" name="apaterno"  required autocomplete="secondname" autofocus placeholder="Apellido Paterno">
+
+  echo '<div class="alert alert-success">El usuario ha sido registrado</div>';
+<button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+<button type="submit" class="btn btn-primary">Guardar</button>
+  
+  <h4 class="modal-title">Modificar datos del colaborador</h4>
+
+  <input maxlength="20" id="nom" type="text" class="form-control" name="nom"  onKeyUp="this.value=this.value.toUpperCase();" required autocomplete="name" autofocus placeholder="Nombre">
+  <input maxlength="20" id="apaternoRes" type="text" class="form-control" name="apaternoRes"  onKeyUp="this.value=this.value.toUpperCase();" required autocomplete="secondname" autofocus placeholder="Apellido Paterno">
+  <input maxlength="20" id="amaternoRes" type="text" class="form-control" name="amaternoRes"  onKeyUp="this.value=this.value.toUpperCase();" required autocomplete="secondname" autofocus placeholder="Puesto del colaborador">
+<button class="btn btn-primary"   type="submit"  >Guardar</button>
+  <h4 class="modal-title">Eliminar colaborador</h4>
+  <p>¿Esta seguro que quiere eliminar este colaborador?</p>
+  <button type="button" class="btn btn-outline-light" data-dismiss="modal">NO</button>
+  <button type="button" class="btn btn-outline-light" onclick="EliminaResolutorId();">SI</button>
+<h4 class="modal-title">Ingrese la contraseña nueva</h4>
+  <label for="pwd"  class="formulario__label">Contraseña nueva:</label>
+<input type="password" class="form-control" name="registroPassword"  id="pwd" maxlength="8" minlength="4" placeholder="Ingrese una contraseña con 4 caracteres como mínimo.">
+  <p class="formulario__input-error">Debe ingresar una contraseña con 4 caracteres como mínimo y 8 máximo.</p>
+  <label for="pwd"  class="formulario__label">Confirme la nueva contraseña:</label>
+<input type="password" class="form-control" name="registroPassword2"  id="pwd2" maxlength="8" minlength="4"  placeholder="Repita la contraseña anterior.">
+<p class="formulario__input-error">Ambas contraseñas deben de ser iguales.</p>
+<button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+<button class="btn btn-primary" data-dismiss="modal" onclick="ValidaPass(<?php echo $_SESSION['IdHotel'] ?>);" >Guardar</button>
+<h4 class="modal-title">Actualiza el logotipo del hotel</h4>
+<button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+<button type="submit" class="btn btn-primary"  >Guardar</button>
+  Swal.fire('El logotipo se actualizó correctamente','','success');

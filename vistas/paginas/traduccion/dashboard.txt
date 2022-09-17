@@ -1,0 +1,23 @@
+                <h1 class="card-title">Estadísticas</h1>
+                    <label>Seleccione el tipo de Estadistica:</label>
+                    <select class="custom-select" id="Opc" PLACEHOLDER="SELECCIONE UNA OPCION" name="OpcDatos">
+                          <option value="1">Resumen de solicitudes</option>
+                          <option value="2">Servicios solicitados por huésped</option>
+                          <option value="3">Ranking de habitaciones con más solicitudes</option>
+                          <option value="4">Calificación a los Colaboradores</option>
+                  <label>Elija un rango de fechas:</label>
+                      <span class="input-group-text">
+                        Fecha incial:
+                      </span>
+                      <span class="input-group-text">
+                        Fecha final:
+                      </span>
+              <div class="card-footer">
+                  <button type="submit" class="btn btn-info">Buscar</button>
+                <h3 class="card-title">Resultados</h3>
+                            echo '<tr role="row"><th >Status</th><th >Colaborador</th><th >Habitación</th><th >Fecha</th><th >Solicitud</th><th >Valoración</th><th>Comentarios</th><th>Tarea</th></tr>';
+                            echo '<tr role="row"><th >Nombre de la tarea</th><th >Total de solicitudes</th></tr>';
+                            echo '<tr role="row"><th >Número de habitación</th><th >Total de solicitudes</th></tr>';
+                            echo '<tr role="row"><th >Nombre del colaborador</th><th >Promedio de calificación de servicios</th><th >Total de servicios atendidos</th></tr>';
+                            echo '<tr role="row"><th >Nombre del colaborador</th><th >Promedio de calificación de servicios</th><th >Total de servicios atendidos</th></tr>';
+                echo ')">Exportar a Excel</button>

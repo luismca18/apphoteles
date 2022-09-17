@@ -1,0 +1,3 @@
+	echo '<script>window.location = "registro";</script>';
+		echo '<script>window.location = "ingreso";</script>';
+
